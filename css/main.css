@@ -86,6 +86,22 @@ main .card__section__image__illustration-box {
   }
 }
 
+main .card__section__image__bgpattern-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  main .card__section__image__bgpattern-mobile {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: url("../images/bg-pattern-mobile.svg");
+  }
+}
+
 main .card__section__image__illustration-mobile {
   display: none;
 }
